@@ -2,8 +2,8 @@ import express from "express";
 import cors from "cors";
 
 import { PORT } from "./constants";
-import user from "src/routes/user";
-import { errorHandler } from "src/middleware/error-mw";
+import user from "./routes/user";
+import { errorHandler } from "./middleware/error-mw";
 
 const app = express();
 
@@ -12,7 +12,7 @@ const port = PORT || 8080;
 app.use(express.json());
 app.use(
   cors({
-    origin: ["http://localhost:8080/"],
+    origin: ["http://localhost:5173/"],
     credentials: true,
   })
 );

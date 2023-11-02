@@ -1,9 +1,9 @@
 import { Router } from "express";
 
-import UserController from "src/controllers/UserController";
+import UserController from "../controllers/UserController";
 import { RoutesPath } from "./constants";
-import validateBody from "src/middleware/validateBody";
-import { joiUserSchema } from "src/models/UserInfo";
+import validateBody from "../middleware/validateBody";
+import { joiUserSchema } from "../models/UserInfo";
 
 const router = Router();
 

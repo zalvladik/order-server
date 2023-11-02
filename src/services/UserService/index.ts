@@ -1,6 +1,6 @@
 import http from "request";
 
-import config from "src/config/config.json";
+import config from "../../config/config.json";
 import { UserT } from "./types";
 
 class UserService {
@@ -13,7 +13,7 @@ class UserService {
       "<b>Телефон</b>: " + numberPhone,
       "<b>Колір</b>: " + color,
       "<b>Кількість</b>: " + quantity,
-      "<b>instagram</b>: " + instagram,
+      instagram ? `<b>instagram</b>: ${instagram}` : "",
     ];
     let msg = "";
     fields.forEach((field) => {

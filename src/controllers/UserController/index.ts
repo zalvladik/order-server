@@ -1,7 +1,7 @@
 import type { NextFunction, Request, Response } from "express";
 
 import { UserCreateRequestT } from "./types";
-import UserService from "src/services/UserService";
+import UserService from "../../services/UserService";
 
 class UserController {
   static async create(
